@@ -1,79 +1,76 @@
-🚀 EMS – Employee Management System
+# 🚀 EMS – Employee Management System
 
-A simple Employee Management System (EMS) built using React + Vite + Context API + Tailwind CSS.
-This application allows an Admin to create and manage tasks, and Employees to view and update their assigned tasks.
+A simple **Employee Management System (EMS)** built using **React + Vite + Context API + Tailwind CSS**.
+
+This application allows an **Admin** to create and manage tasks, and **Employees** to view and update their assigned tasks.
+
+---
 
 ## 🌍 Live Demo
 
 [🚀 View Live Project](https://employee-mang-system-reactjs.vercel.app/)
 
-📌 Features
-🔐 Authentication
+---
 
-Admin login
+## 📌 Features
 
-Employee login
+### 🔐 Authentication
 
-Session persistence using localStorage
+- Admin login  
+- Employee login  
+- Session persistence using `localStorage`  
+- Auto-login on page refresh  
+- Logout functionality  
 
-Auto-login on page refresh
+---
 
-Logout functionality
+### 👨‍💼 Admin Dashboard
 
-👨‍💼 Admin Dashboard
+- View all employees  
+- See task statistics for each employee:
+  - New Tasks  
+  - Active Tasks  
+  - Completed Tasks  
+  - Failed Tasks  
+- Create and assign tasks to employees  
+- Tasks are stored in `localStorage`  
 
-View all employees
+---
 
-See task statistics for each employee:
+### 👨‍💻 Employee Dashboard
 
-New Tasks
+- Personalized welcome header  
+- View task statistics  
+- Horizontal scrollable task list  
+- Task states:
+  - 🆕 New Task  
+  - 🔵 Active Task  
+  - ✅ Completed Task  
+  - ❌ Failed Task  
 
-Active Tasks
+---
 
-Completed Tasks
+## 🛠️ Tech Stack
 
-Failed Tasks
+- React 18  
+- Vite  
+- Context API  
+- Tailwind CSS  
+- LocalStorage (Mock Backend)  
 
-Create and assign tasks to employees
+---
 
-Tasks are stored in localStorage
+## 📂 Project Structure
 
-👨‍💻 Employee Dashboard
-
-Personalized welcome header
-
-View task statistics
-
-Horizontal scrollable task list
-
-Task states:
-
-🆕 New Task
-
-🔵 Active Task
-
-✅ Completed Task
-
-❌ Failed Task
-
-🛠️ Tech Stack
-
-React 18
-
-Vite
-
-Context API
-
-Tailwind CSS
-
-LocalStorage (Mock Backend)
-
-📂 Project Structure
-
+```bash
 ems-react/
 │
+├── public/
+│
 ├── src/
+│   │
 │   ├── components/
+│   │   │
 │   │   ├── Auth/
 │   │   │   └── Login.jsx
 │   │   │
@@ -104,10 +101,14 @@ ems-react/
 │   ├── main.jsx
 │   └── index.css
 │
-└── package.json
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
 
 🔑 Demo Credentials
 👑 Admin
+
 Email: admin@me.com
 Password: 123
 
@@ -115,7 +116,6 @@ Password: 123
 1️⃣ Clone the Repository
 git clone <your-repo-url>
 cd ems-react
-
 2️⃣ Install Dependencies
 npm install
 3️⃣ Run Development Server
@@ -124,7 +124,6 @@ npm run dev
 App will run on:
 
 http://localhost:5173
-
 🧠 How It Works
 🔹 Authentication Logic
 
@@ -155,7 +154,7 @@ localStorage:
 - admin
 - loggedInUser
 
-This project does NOT use a real backend — it simulates one using localStorage.
+This project does not use a real backend — it simulates one using localStorage.
 
 📈 Task Status Flow
 New Task → Active Task → Completed / Failed
