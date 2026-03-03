@@ -5,7 +5,7 @@ This application allows an Admin to create and manage tasks, and Employees to vi
 
 ## 🌍 Live Demo
 
-[🚀 View Live Project](https://ems-react.vercel.app)
+[🚀 View Live Project](https://employee-mang-system-reactjs.vercel.app/)
 
 📌 Features
 🔐 Authentication
